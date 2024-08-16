@@ -1,1 +1,19 @@
+import React from "react";
 
+function Inc() {
+  return (
+    <div>
+      <p>Button clicked {count} times</p>
+
+      <button
+        onclick={() => {
+          setcount(count + 1);
+        }}
+      >
+        Click me
+      </button>
+    </div>
+  );
+}
+
+export default Inc;
