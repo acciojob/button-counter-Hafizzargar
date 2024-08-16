@@ -1,16 +1,13 @@
 
 import React , {useState} from "react";
 import './../styles/App.css';
+import Inc form './Inc
 
 const App = () => {
   const [count,setcount]=useState(0);
   return (
     <div>
-      <p>Button clicked {count} times</p>
-
-      <button onclick={()=>{
-        return setcount(count+1);
-      }}>Click me</button>
+      <Inc/>
 
 
       
