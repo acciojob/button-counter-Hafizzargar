@@ -1,9 +1,9 @@
 
-import React from "react";
+import React , {useState} from "react";
 import './../styles/App.css';
 
 const App = () => {
-  let [count,setcount]=useState(0);
+  const [count,setcount]=useState(0);
   return (
     <div>
       <p>Button clicked {count} times</p>
