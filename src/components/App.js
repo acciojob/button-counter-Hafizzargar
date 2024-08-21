@@ -1,19 +1,24 @@
 
 import React , {useState} from "react";
 import './../styles/App.css';
-import Inc form './Inc
+
 
 const App = () => {
+ const [count, setCount] = useState(0);
+
+    // Event handler to increment the counter
+    const handleClick = () => {
+        setCount(count + 1);
+    };
+
+    return (
+        <div>
+            <p>Button clicked {count} times</p>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+    );
  
-  return (
-    <div>
-      <Inc/>
-
-
-      
-        {/* Do not remove the main div */}
-    </div>
-  )
+ 
 }
 
 export default App
